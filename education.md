@@ -17,4 +17,4 @@ title: Проекты
 - **email:** [simagin.mail@yandex.ru](mailto:simagin.mail@yandex.ru)
 - **telegram:** [@dasimagin](https://t.me/dasimagin)
 
-**P.S.** Приходит к нам делать роботов :)
+**P.S.** Приходитe к нам делать роботов :)
