@@ -1,4 +1,38 @@
 baseURL = 'https://dasimagin.github.io/'
 languageCode = 'en-us'
-title = 'Hello, world!'
+title = 'Robotics notes'
 theme = 'typo'
+
+[params]
+homeIntroTitle = 'Denis Simagin'
+theme = 'auto'
+showFooter = true
+footerContent = "Love robots!"
+paginationSize = 20
+listSummaries = true
+
+homeIntroContent = """
+I am a software engineer with a foundation in computer science and a passion for machine learning.
+I am interested in a range of robotics-related topics. This blog is a collection of thoughts and my research notes.
+"""
+
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/denis-simagin-98627895/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/dasimagin"
+
+[[params.social]]
+name = "youtube"
+url = "https://www.youtube.com/@dasimagin"
