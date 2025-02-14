@@ -1,0 +1,4 @@
+baseURL = 'https://dasimagin.github.io/'
+languageCode = 'en-us'
+title = 'Hello, world!'
+theme = 'typo'
