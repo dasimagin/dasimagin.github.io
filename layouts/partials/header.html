@@ -1,0 +1,15 @@
+{{/* Header */}}
+
+<header>
+  <h1 class="site-title">
+    {{- .Site.Title }} {{ $.Page.Section -}}
+  </h1>
+  <nav class="menu">
+    {{ with site.Menus.main }}
+    {{ range . }}
+    {{ $active := (eq .URL $.Page.RelPermalink) }}
+    <a {{if $active }} class="active" {{end}} href="{{ .URL }}"> /{{- .Name }}</a>
+    {{ end }}
+    {{ end }}
+  </nav>
+</header>

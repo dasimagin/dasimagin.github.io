@@ -1,0 +1,21 @@
+:root {
+  /* Common */
+  --font-text: 'Literata', serif;
+  --font-code: 'JetBrains Mono', monospace;
+
+  /* Header */
+  --header-top-gap: 2rem;
+  --header-bottom-gap: 2rem;
+  --header-menu-side-gap: 0.5rem;
+  --header-menu-horizontal-gap: 0.5rem;
+
+  /* Footer */
+  --footer-height: 4em;
+
+  /* Content */
+  --content-width: 720px;
+  --content-padding: 2.0em;
+
+  /* Social */
+  --social-icon-size: 24px;
+}

@@ -1,38 +1,32 @@
 baseURL = 'https://dasimagin.github.io/'
 languageCode = 'en-us'
-title = 'Robotics notes'
-theme = 'typo'
+title = 'Robotics'
+
+[[menu.main]]
+  name = 'home'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'notes'
+  url = '/notes/'
+  weight = 2
 
 [params]
-homeIntroTitle = 'Denis Simagin'
-theme = 'auto'
-showFooter = true
-footerContent = "Love robots!"
-paginationSize = 20
-listSummaries = true
-
-homeIntroContent = """
-I am a software engineer with a foundation in computer science and a passion for machine learning.
-I am interested in a range of robotics-related topics. This blog is a collection of thoughts and my research notes.
-"""
-
-[[params.menu]]
-name = "home"
-url = "/"
-
-[[params.menu]]
-name = "posts"
-url = "/posts"
-
+  author = 'Denis Simagin'
+  dateFormat = 'Jan 2 2006'
+  showSummary = true
+  description = 'I am a software engineer with a foundation in computer science and a passion for machine learning. I am interested in a range of robotics-related topics. These notes are a collection of thoughts and research results.'
+  footer = 'Love robots!'
 
 [[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/denis-simagin-98627895/"
+  name = 'GitHub'
+  url = 'https://github.com/dasimagin'
 
 [[params.social]]
-name = "github"
-url = "https://github.com/dasimagin"
+  name = 'LinkedIn'
+  url = 'https://linkedin.com/in/denis-simagin-98627895'
 
 [[params.social]]
-name = "youtube"
-url = "https://www.youtube.com/@dasimagin"
+  name = 'YouTube'
+  url = 'https://youtube.com/@dasimagin'

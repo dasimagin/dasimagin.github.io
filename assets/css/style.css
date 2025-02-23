@@ -1,0 +1,147 @@
+/* common */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-text);
+  font-weight: normal;
+  font-size: 16px;
+  margin: auto;
+  max-width: var(--content-width);
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+  color: var(--content-primary);
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+/* main */
+main {
+  flex: 1;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  margin-top: var(--header-top-gap);
+  margin-bottom: var(--header-bottom-gap);
+}
+
+.site-title {
+  font-size: 2.8em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.site-title a {
+  color: var(--content-primary);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.menu a {
+  font-family: var(--font-code);
+  color: var(--content-secondary);
+  margin-top: var(--header-menu-horizontal-gap);
+  margin-right: var(--header-menu-side-gap);
+  margin-bottom: var(--header-menu-horizontal-gap);
+}
+
+.menu a.active {
+  color: var(--content-primary);
+  font-weight: bolder;
+}
+
+.menu a:hover {
+  color: var(--content-primary);
+}
+
+/* footer */
+
+footer {
+  color: var(--content-secondary);
+  font-size: 0.8em;
+  display: flex;
+  height: var(--footer-height);
+  justify-content: center;
+  align-items: center;
+}
+
+/* notes list */
+
+.note-entry {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: flex;
+  align-items: baseline;
+}
+
+.note-entry-title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.note-entry-title a {
+  color: var(--content-primary);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.note-entry-title a:hover {
+  text-decoration: underline;
+}
+
+.note-entry-date {
+  font-size: small;
+  color: var(--content-secondary);
+  font-family: var(--font-code);
+  min-width: 120px;
+  max-width: 120px;
+  text-align: right;
+  padding-right: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.note-entry-summary {
+  color: var(--content-secondary);
+  font-size: small;
+  margin: 0;
+}
+
+/* social icons */
+
+.social {
+  display: flex;
+  align-items: center;
+  height: var(--social-icon-size);
+}
+
+.social a {
+  height: var(--social-icon-size);
+}
+
+.social a img {
+  height: var(--social-icon-size);
+  width: var(--social-icon-size);
+  margin: 0 calc(var(--social-icon-size) / 2);
+}

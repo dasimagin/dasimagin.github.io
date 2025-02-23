@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ with .Site.Params.author }}
+<h1> {{ . }} </h1>
+{{ end }}
+
+{{ with .Site.Params.description }}
+<p> {{ . }} </p>
+{{ end }}
+
+
+{{ with site.Params.social }}
+<div class="social">
+  {{- range . }}
+    <a href="{{ .url | safeURL }}" title="{{ .name }}">
+      <img src="icon/{{ .name | lower }}.svg" alt="{{ .name }}">
+    </a>
+  {{- end }}
+</div>
+{{ end }}
+
+{{end}}

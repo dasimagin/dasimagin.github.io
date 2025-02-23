@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div>
+
+  {{ $paginator := .Paginate (.Pages) 5 }}
+
+  {{ range $index, $page := $paginator.Pages }}
+  <div class="note-entry">
+    <p class="note-entry-date">{{ .Date | time.Format $.Site.Params.DateFormat }}</p>
+
+    <div>
+      <p class="note-entry-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{ if .Site.Params.ShowSummary }}
+      <p class="note-entry-summary">{{ .Description }}</p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+</div>
+{{ end }}
